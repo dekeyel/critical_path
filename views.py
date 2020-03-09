@@ -52,7 +52,7 @@ class Krit:
         return tmp.index(min(tmp))
 
 
-    def __union2(self, mass):
+    def __max_of_sum_mass(self, mass):
         tmp = [self.__sum(i) for i in mass]
 
         return max(tmp)
@@ -69,7 +69,7 @@ class Krit:
 
         print(p)
 
-        print('Tmax = {}'.format(self.__union2(p)))
+        print('Tmax = {}'.format(self.__max_of_sum_mass(p)))
 
         print('\n', '-' * 20, '\n', sep='')
 
